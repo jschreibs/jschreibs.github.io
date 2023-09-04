@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     <h6 class="articleDate">${data.date}</h6>
                     <h1 class="articleTitle">${data.title}</h1>
                     <h5 class="articleAuthor">${data.author}</h5>
-                    <span class="articleSummary">${data.summary}</span>
+                    <div class="articleSummary">${data.summary}</div>
                 `;
                 articleLink.appendChild(articleContainer)
                 container.appendChild(articleLink);

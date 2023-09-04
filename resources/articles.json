@@ -13,7 +13,7 @@
         "author": "Author 2",
         "summary": "Summary of Article 2",
         "body": "Body of Article 2",
-        "link": "article-name"
+        "link": "article-name2"
     },
     {
         "date": "2023-09-03",
@@ -21,6 +21,6 @@
         "author": "Author 3",
         "summary": "Summary of Article 3",
         "body": "Body of Article 3",
-        "link": "article-name"
+        "link": "article-name3"
     }
 ]
