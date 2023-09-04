@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- External style sheets. -->
+<html lang="en">
+   <head>
+      <meta charset = "utf-8">
+      <title>AboutUs</title>
+
+      <!-- Font Family -->
+      <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+      
+      <!-- CSS -->
+      <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+   </head>
+   <body>
+      <nav class="navbar">
+         <a href="home.html" target="_self">
+            <img src="logo.jpg" class="logo"/>
+         </a>
+         <a href="blog.html" class="navLinks" id="blog" target="_self">Blog</a> 
+         <a href="contactUs.html" class="navLinks" id="cu">Contact Us</a>
+      </nav>
+      <div class="contactUsPage">
+         <div class="contactUsDiv">
+            <h2>Send Us a Message!</h2>
+            <form action="mailto:contact@example.com" method="post" enctype="text/plain">
+              <label for="name">Full Name
+                  <div class="inputBox">
+                     <input type="text" id="name" name="name" required>
+                  </div>
+              </label>
+              <label for="description">Description
+                  <div class="inputBox">
+                     <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+                  </div>
+              </label>
+              <input type="submit" value="Submit">
+            </form>
+         </div>
+      </div>
+   </body>
+</html>

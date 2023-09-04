@@ -1,0 +1,197 @@
+/* Color Family 
+
+Lightest
+#079891 (Sea Foam)*
+#27728F (Turqoise)
+#255D8C (Blue
+#5B3187 (Purple)*
+#3C2D88 (Dark Purple
+
+Darkest
+*/
+
+/* HTML */
+html * {
+	font-family: Merriweather;
+}
+
+/* Body */
+body {
+    margin: 0;
+	background-color: white;
+    padding-top: 70px;
+    overflow-x: hidden
+}
+
+
+/* Navigation Bar */
+.logo {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    height: 52px;
+}
+.navbar {
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    justify-content: flex-start;
+    display: flex;
+    border-bottom: 4px solid #5B3187;
+
+    width: 100vw;
+}
+nav > .navLinks {
+    padding: 24px 16px 16px 16px;
+	color: white;
+    font-weight: bold;
+	font-size: 16pt;
+	text-decoration: none;
+}
+
+nav > .navLinks:hover {
+    padding: 24px 16px 16px 16px;
+}
+#blog {
+    background-color: #13b8af;
+}
+#cu {
+    background-color: #8146c0;
+}
+#blog:hover {
+    background-color: #087a75;
+}
+#cu:hover {
+    background-color: #51267e;
+}
+
+
+
+
+/* Home */
+.HomeBackground { 
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #459690, #5B3187);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.homeBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-weight: bold;
+}
+#welcome {
+    font-size: 3vw;
+    width: auto;
+    min-width: 300;
+    max-height: auto;
+    margin: 50px;
+    border-radius: 22px;
+    padding: 10px 30px;
+    height: 50px;
+}
+#whyUs {
+    margin-top: 50px;
+}
+.planContainer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.planLinks {
+    background-color: white;
+    border-radius: 10px;
+    flex: 1;
+    padding: 10px;
+    margin: 0 80px;
+    font-weight: bold;
+	font-size: 20pt;
+	text-decoration: none;
+}
+#aca {
+    color: #7a70bb;
+}
+#medicare {
+    color: #459690;
+}
+
+/* Blog */
+.blogBackground { 
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #459690, #5B3187);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.articleBackground { 
+    width: 100vw;
+    height: 100vh;
+    background-color: #459690;
+    display: flex;
+    justify-content: center;
+}
+.articlePage, .articleContainer {
+    background-color: white;
+    width: 900px;
+    min-width: 300px;
+    height: auto;
+    margin: 50px;
+    padding: 10px 30px;
+    border-radius: 22px;
+}
+.articleContainer:first-child {
+    margin-top: 40px
+}
+.articleContainer {
+    margin: 20px 50px;
+}
+.articleLink {
+    text-decoration: none;
+    color: black;
+}
+
+/* Contact Us */
+.contactUsPage { 
+    width: 100vw;
+    height: 100vh;
+    background-color: #459690;
+    display: flex;
+    justify-content: center;
+}
+.contactUsDiv {
+    background-color: white;
+    width: 900px;
+    min-width: 300px;
+    max-height: 700px;
+    margin: 50px;
+    padding: 10px 30px;
+    border-radius: 22px;
+}
+form > label {
+    color: grey;
+}
+.inputBox input {
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.inputBox textarea {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
