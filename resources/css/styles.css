@@ -17,108 +17,190 @@ html * {
 
 /* Body */
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
-	background-color: white;
     padding-top: 70px;
-    overflow-x: hidden
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Navigation Bar */
 .logo {
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
     width: auto;
-    height: 52px;
+    height: 60px;
 }
 .navbar {
     background-color: white;
     top: 0px;
     left: 0px;
     position: fixed;
-    justify-content: flex-start;
     display: flex;
     border-bottom: 4px solid #5B3187;
-
     width: 100vw;
+    min-height: 70px;
+    height: 70px;
+    max-height: 70px;
 }
-nav > .navLinks {
-    padding: 24px 16px 16px 16px;
-	color: white;
+.left-column {
+    margin-left: 16vw;
+    display: flex;
+    align-items: center;
+}
+.right-column {
+    margin-right: 16vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    /* margin-right: 17px; */
+}
+.navLinks {
+    color: black;
+    font-family: arial;
     font-weight: bold;
-	font-size: 16pt;
-	text-decoration: none;
+    font-size: 1vw;
+    text-decoration: none;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
 }
-
-nav > .navLinks:hover {
-    padding: 24px 16px 16px 16px;
-}
-#blog {
+#phone {
+    color:white;
     background-color: #13b8af;
 }
-#cu {
-    background-color: #8146c0;
-}
-#blog:hover {
+#phone:hover {
     background-color: #087a75;
+}
+#cu {
+    color: white;
+    background-color: #8146c0;
 }
 #cu:hover {
     background-color: #51267e;
 }
+#navButton:hover {
+    color: white;
+    background-color: #51267e;
+}
 
-/* Home */
-.HomeBackground { 
+/* Start Home */
+.homeBackgroundContainer {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, #459690, #5B3187);
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+}
+
+/* Home Banner */
+.homeBannerContainer {
+    width: 100%;
+    height: 500px;
+}
+.homeBannerBackgroundImage {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .homeBanner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-weight: bold;
-}
-#welcome {
-    font-size: 3vw;
-    width: auto;
-    min-width: 300;
-    max-height: auto;
-    margin: 50px;
-    border-radius: 22px;
-    padding: 10px 30px;
-    height: 50px;
-}
-#whyUs {
-    margin-top: 50px;
-}
-.planContainer {
     text-align: center;
+    padding: 30px;
+    margin: 30px 10vw -20px 10vw;
+}
+.headerText {
+    color: white;
+    font-weight: bold;
+    font-size: 40pt;
+}
+.subText {
+    color: white;
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+/* Plans */
+.homePlanContainer {
+    margin: 50px 16vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.homePlanImg {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 20px;
-}
-.planLinks {
+    margin: 10px;
     background-color: white;
     border-radius: 10px;
-    flex: 1;
-    padding: 10px;
-    margin: 0 80px;
+    width: 220px;
+    height: 50px;
+}
+.homePlanImg > img {
+    width: 220px;
+    height: auto;
+}
+
+/* Our Services Are Free for You */
+.homeQuestions {
+    margin: 40px 16vw;
+}
+.subHeaderText {
     font-weight: bold;
-	font-size: 20pt;
-	text-decoration: none;
+    font-size: 30pt;
 }
-#aca {
-    color: #7a70bb;
+.questionText {
+    font-size: 16pt;
+    font-weight: bold;
 }
-#medicare {
-    color: #459690;
+.answerText {
+    font-family: arial;
+    font-size: 14pt;
+    margin: 20px 1vw;
 }
+/* Services */
+.homeServicesContainer {
+    width: 100%;
+    height: 500px;
+}
+.homeServicesBackgroundImage {
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.homeServicesBanner {
+    text-align: center;
+    padding: 120px 0px 0px 0px;
+    margin: 40px 10vw;
+}
+.servicesContainer {
+    margin: 50px 16vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.homeServicesImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px;
+    margin: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+.homeServicesImg > img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* End Home */
 
 /* Blog */
 .blogBackground { 

@@ -1,11 +1,12 @@
 [
     {
         "date": "2023-09-01",
-        "title": "Article 1",
-        "author": "Author 1",
-        "summary": "Summary of Article 1",
-        "body": "Body of Article 1",
-        "link": "article-name"
+        "title": "Welcome to Our Website",
+        "author": "Connor Koker",
+        "summary": "Intro to our website",
+        "body": "<div>Hello my name is connor blah blah blah. Here is what I want to do!</div><ul><li>this</li><li>this</li><li>and</li><li>that</li></ul>",
+        "link": "welcome-to-our-website",
+        "images": "images/articles/welcome.png"
     },
     {
         "date": "2023-09-02",
