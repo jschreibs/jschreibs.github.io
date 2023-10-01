@@ -7,6 +7,13 @@ Lightest
 #5B3187 (Purple)*
 #3C2D88 (Dark Purple
 
+@media (max-width: 768px) {
+    Styles for screens up to 768px wide (typically for phones)
+}
+@media (max-width: 992px) {
+    Styles for screens up to 992px wide (typically for tablets)
+}
+
 Darkest
 */
 
@@ -100,7 +107,7 @@ body {
 }
 .homeBannerBackgroundImage {
     width: 100%;
-    height: 600px;
+    height: 620px; /* change here? */
     position: absolute;
     top: 0;
     left: 0;
@@ -111,15 +118,20 @@ body {
     padding: 30px;
     margin: 30px 10vw -20px 10vw;
 }
-.headerText {
+.headerTextWhite {
     color: white;
     font-weight: bold;
-    font-size: 40pt;
+    font-size: 2.8vw; /* 40pt */
+}
+.headerTextBlack {
+    color: black;
+    font-weight: bold;
+    font-size: 2.8vw; /* 40pt */
 }
 .subText {
     color: white;
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 1.6vw; /* 24pt */
 }
 
 /* Plans */
@@ -133,21 +145,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 20px 20px 20px;
-    margin: 10px;
+    padding: 1vw 1vw 1vw 1vw; /* 20px */
+    margin: 1vw; /* 10px */
     background-color: white;
     border-radius: 10px;
-    width: 220px;  /* vw */
-    height: 50px;
+    width: 12vw;  /* 220px */
+    height: 3vw; /* 50px */
 }
 .homePlanImg > a > img {
-    width: 220px;  /* vw */
+    width: 12vw;  /* 220px */
     height: auto;
 }
 
 /* Our Services Are Free for You */
-.homeQuestions {
-    margin: 40px 16vw;
+.homeQuestionsContainer {
+    margin: 70px 16vw 20px 16vw;
 }
 .subHeaderText {
     font-weight: bold;
@@ -166,7 +178,7 @@ body {
 /* Services */
 .homeServicesContainer {
     width: 100%;
-    height: 500px;
+    height: 1200px;
 }
 .homeServicesBackgroundImage {
     width: 100vw;
@@ -175,10 +187,10 @@ body {
 }
 .homeServicesBanner {
     text-align: center;
-    padding: 120px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
     margin: 40px 10vw;
 }
-.servicesContainer {
+.homeServicesButtonContainer {
     margin: 50px 16vw;
     display: flex;
     flex-wrap: wrap;
@@ -194,13 +206,30 @@ body {
     margin: 30px;
     background-color: white;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
 }
 .homeServicesImg > img {
     width: 150px;
     height: auto;
     margin-bottom: 10px;
+}
+
+/* Home Blog Posts */
+.homeArticlesContainer {
+    width: 100%;
+    height: 700px;
+}
+.homeBlogPostBanner {
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+    margin: 40px 10vw;
+}
+.homeBlogPostsContainer {
+    margin: 50px 16vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /* End Home */
 
