@@ -5,6 +5,9 @@
       <meta charset = "utf-8">
       <title>AboutUs</title>
 
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="resources/favicon/favicon.ico">
+
       <!-- Font Family -->
       <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
       
@@ -21,26 +24,49 @@
          <div class="right-column">
             <a href="index.html#OurServices" class="navLinks" id="navButton">SERVICES</a>
             <a href="blog.html" class="navLinks" id="navButton">BLOG</a> 
-            <a href="tel:+6514325555" class="navLinks" id="phone">651-432-5555</a>
-            <a href="contactUs.html" class="navLinks" id="cu">CONTACT US</a>
+            <a href="tel:+6514325555" class="navLinks" id="phoneButton">651-432-5555</a>
+            <a href="contactUs.html" class="navLinks" id="contactUsButton">CONTACT US</a>
          </div>
       </nav>
-      <div class="contactUsPage">
-         <div class="contactUsDiv">
-            <h2>Send Us a Message!</h2>
-            <form action="mailto:contact@example.com" method="post" enctype="text/plain">
-              <label for="name">Full Name
-                  <div class="inputBox">
-                     <input type="text" id="name" name="name" required>
-                  </div>
-              </label>
-              <label for="description">Description
-                  <div class="inputBox">
-                     <textarea id="description" name="description" rows="4" cols="50" required></textarea>
-                  </div>
-              </label>
-              <input type="submit" value="Submit">
-            </form>
+      <div class="contactUsContainer">
+         <div class="contactUsPage">
+            <img src="resources/images/contactUsBackground.jpg" class="contactUsBackgroundImage" alt="Background Image">
+            <div class="contactUsDiv">
+               <h2>Send Us a Message!</h2>
+               <form action="mailto:contact@example.com" method="post" enctype="text/plain">
+                  <label for="name">Full Name
+                     <div class="inputBox">
+                        <input type="text" id="name" name="name" required>
+                     </div>
+                  </label>
+                  <label for="birthday">Birthday
+                     <div class="inputBox">
+                        <input type="text" id="birthday" name="birthday" required>
+                     </div>
+                  </label>
+                  <label for="zipcode">Zipcode
+                     <div class="inputBox">
+                        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="Please enter a valid 5-digit zip code" required>
+                     </div>
+                  </label>
+                  <label for="phone">Phone
+                     <div class="inputBox">
+                        <input type="text" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+                     </div>
+                  </label>
+                  <label for="email">Email
+                     <div class="inputBox">
+                        <input type="text" id="email" name="email" required>
+                     </div>
+                  </label>
+                  <label for="message">Message
+                     <div class="inputBox">
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                     </div>
+                  </label>
+               <input type="submit" value="Submit">
+               </form>
+            </div>
          </div>
       </div>
    </body>

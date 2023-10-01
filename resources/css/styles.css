@@ -68,18 +68,18 @@ body {
     height: 100%;
     box-sizing: border-box;
 }
-#phone {
+#phoneButton {
     color:white;
     background-color: #13b8af;
 }
-#phone:hover {
+#phoneButton:hover {
     background-color: #087a75;
 }
-#cu {
+#contactUsButton {
     color: white;
     background-color: #8146c0;
 }
-#cu:hover {
+#contactUsButton:hover {
     background-color: #51267e;
 }
 #navButton:hover {
@@ -132,15 +132,16 @@ body {
 .homePlanImg {
     display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    padding: 25px 20px 20px 20px;
     margin: 10px;
     background-color: white;
     border-radius: 10px;
-    width: 220px;
+    width: 220px;  /* vw */
     height: 50px;
 }
-.homePlanImg > img {
-    width: 220px;
+.homePlanImg > a > img {
+    width: 220px;  /* vw */
     height: auto;
 }
 
@@ -161,13 +162,14 @@ body {
     font-size: 14pt;
     margin: 20px 1vw;
 }
+
 /* Services */
 .homeServicesContainer {
     width: 100%;
     height: 500px;
 }
 .homeServicesBackgroundImage {
-    height: 100vh;
+    width: 100vw;
     position: absolute;
     z-index: -1;
 }
@@ -239,13 +241,25 @@ body {
 }
 
 /* Contact Us */
+.contactUsContainer {
+    width: 100vw;
+    height: 100vh;
+}
 .contactUsPage { 
     width: 100vw;
     height: 100vh;
-    background-color: #459690;
     display: flex;
     justify-content: center;
 }
+.contactUsBackgroundImage {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 300;
+    left: 0;
+    z-index: -1;
+}
+
 .contactUsDiv {
     background-color: white;
     width: 900px;
@@ -254,6 +268,7 @@ body {
     margin: 50px;
     padding: 10px 30px;
     border-radius: 22px;
+    box-shadow: 0 0 10px 10px rgba(80, 80, 80, 0.4)
 }
 form > label {
     color: grey;
