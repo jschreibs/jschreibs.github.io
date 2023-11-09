@@ -7,7 +7,7 @@
         "body": "<div>Hello my name is connor blah blah blah. Here is what I want to do!</div><ul><li>this</li><li>this</li><li>and</li><li>that</li></ul>",
         "link": "welcome-to-our-website",
         "images": "images/articles/welcome.png",
-        "isHightlighted": "yes"
+        "isHighlighted": "yes"
     },
     {
         "date": "2023-09-02",
@@ -17,7 +17,7 @@
         "body": "Body of Article 2",
         "link": "article-name2",
         "images": "images/articles/welcome.png",
-        "isHightlighted": "yes"
+        "isHighlighted": "yes"
     },
     {
         "date": "2023-09-03",
@@ -27,6 +27,6 @@
         "body": "Body of Article 3",
         "link": "article-name3",
         "images": "images/articles/welcome.png",
-        "isHightlighted": "no"
+        "isHighlighted": "no"
     }
 ]
