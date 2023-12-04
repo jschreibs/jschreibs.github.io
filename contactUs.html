@@ -3,7 +3,7 @@
 <html lang="en">
    <head>
       <meta charset = "utf-8">
-      <title>GuideStar</title>
+      <title>Contact | GuideStar</title>
 
       <!-- Favicon -->
       <link rel="icon" type="image/x-icon" href="resources/favicon/favicon.ico">
@@ -13,6 +13,9 @@
       
       <!-- CSS -->
       <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+
+      <!-- JS -->
+      <script src="resources/js/contactUs.js"></script>
    </head>
    <body>
       <nav class="navbar">
@@ -33,38 +36,38 @@
             <img src="resources/images/backgrounds/contactUsBackground.png" class="contactUsBackgroundImage" alt="Background Image">
             <div class="contactUsDiv">
                <h2>Send Us a Message!</h2>
-               <form action="mailto:contact@example.com" method="post" enctype="text/plain">
-                  <label for="name">Full Name
+               <form action="resources/php/contact_form.php" id="contact_form" method="post">
+                  <label for="name">Name
                      <div class="inputBox">
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" placeholder="Enter Full Name"  maxlength="100" required>
                      </div>
                   </label>
-                  <label for="birthday">Birthday
+                  <label for="birthday">Birthday (Month-Day-Year)
                      <div class="inputBox">
-                        <input type="text" id="birthday" name="birthday" required>
+                        <input type="text" id="birthday" name="birthday" placeholder="12-31-2000" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" title="Please enter in Month-Day-Year format" maxlength="10" required>
                      </div>
                   </label>
                   <label for="zipcode">Zipcode
                      <div class="inputBox">
-                        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="Please enter a valid 5-digit zip code" required>
+                        <input type="text" id="zipcode" name="zipcode" placeholder="xxxxx" pattern="[0-9]{5}" maxlength="5" title="Please enter a valid 5-digit zip code" required>
                      </div>
                   </label>
                   <label for="phone">Phone
                      <div class="inputBox">
-                        <input type="text" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
+                        <input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" title="Please enter a valid 10-digit phone number" required>
                      </div>
                   </label>
                   <label for="email">Email
                      <div class="inputBox">
-                        <input type="text" id="email" name="email" required>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com" pattern="[a-zA-Z0-9._%+-]{1,}@[a-zA-Z0-9._%+-]{1,}.[a-zA-Z]{2,}" maxlength="80" required>
                      </div>
                   </label>
                   <label for="message">Message
                      <div class="inputBox">
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                        <textarea id="message" name="message" rows="4" cols="50" maxlength="150" required></textarea>
                      </div>
                   </label>
-               <input type="submit" value="Submit">
+                  <input type="submit" value="Submit">
                </form>
             </div>
          </div>

@@ -335,7 +335,7 @@ body {
     box-shadow: 0 0 10px 10px rgba(80, 80, 80, 0.4);
 }
 form > label {
-    color: grey;
+    color: black;
 }
 .inputBox input {
     border: none;
