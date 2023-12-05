@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 articleLink.href = "article.html?" + data.link;
 
                 const articleContainer = document.createElement('div');
-                articleContainer.classList.add('articleContainer');
+                articleContainer.classList.add('articleContainerB');
                 articleContainer.innerHTML = `
                     <h6 class="articleDate">${data.date}</h6>
                     <h1 class="articleTitle">${data.title}</h1>

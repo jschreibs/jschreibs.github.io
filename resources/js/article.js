@@ -13,17 +13,48 @@ document.addEventListener('DOMContentLoaded', function () {
 
             articles.forEach(data => {
                 if(data.link === requestedLink){
-                    const articlePage = document.createElement('div');
-                    articlePage.classList.add('articlePage');
-            
-                    articlePage.innerHTML = `
-                        <h6 class="articleDate">${data.date}</h6>
-                        <h1 class="articleTitle">${data.title}</h1>
-                        <h5 class="articleAuthor">${data.author}</h5>
-                        <div class="articleBody">${data.body}</div>
-                    `;
-    
-                    container.appendChild(articlePage);
+                    const articleContainer = document.createElement('div');
+                    articleContainer.classList.add('articleContainerA');
+          
+                    // Create the first row for the image
+                    const imageRow = document.createElement('div');
+                    imageRow.classList.add('articleImageRow');
+          
+                    const articleImage = document.createElement('img');
+                    articleImage.classList.add('articleImage');
+                    articleImage.src = data.image;
+          
+                    imageRow.appendChild(articleImage);
+          
+                    // Create the second row for the rest of the data
+                    const dataRow = document.createElement('div');
+                    dataRow.classList.add('articleDataRow');
+          
+                    const articleDate = document.createElement('div');
+                    articleDate.classList.add('articleDate');
+                    articleDate.textContent = data.date;
+          
+                    const articleTitle = document.createElement('div');
+                    articleTitle.classList.add('articleTitle');
+                    articleTitle.textContent = data.title;
+          
+                    const articleAuthor = document.createElement('div');
+                    articleAuthor.classList.add('articleAuthor');
+                    articleAuthor.textContent = data.author;
+          
+                    const articleBody = document.createElement('div');
+                    articleBody.innerHTML = `<div class="articleBody">${data.body}</div>`;
+          
+                    // Append elements to the data row
+                    dataRow.appendChild(articleDate);
+                    dataRow.appendChild(articleTitle);
+                    dataRow.appendChild(articleAuthor);
+                    dataRow.appendChild(articleBody);
+          
+                    // Append rows to containers
+                    articleContainer.appendChild(imageRow);
+                    articleContainer.appendChild(dataRow);
+                    container.appendChild(articleContainer);
                 }
             });
 

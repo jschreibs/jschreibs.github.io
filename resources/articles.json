@@ -1,32 +1,33 @@
 [
     {
-        "date": "2023-09-01",
+        "date": "12-4-2023",
         "title": "Welcome to Our Website",
         "author": "Connor Koker",
-        "summary": "Intro to our website",
+        "summary": "Here is where the summary will go. This is complete filler text nonse that is meant to fill the space so you can see what an actual summary may look like when presented at this size.",
         "body": "<div>Hello my name is connor blah blah blah. Here is what I want to do!</div><ul><li>this</li><li>this</li><li>and</li><li>that</li></ul>",
         "link": "welcome-to-our-website",
-        "images": "images/articles/welcome.png",
+        "image": "resources/images/articles/exampleArticleImage.png",
         "isHighlighted": "yes"
     },
     {
-        "date": "2023-09-02",
-        "title": "Article 2",
-        "author": "Author 2",
-        "summary": "Summary of Article 2",
-        "body": "Body of Article 2",
-        "link": "article-name2",
-        "images": "images/articles/welcome.png",
+        "date": "Date here (month-day-year format)",
+        "title": "Article here",
+        "author": "Author here",
+        "summary": "Summary here",
+        "body": "Body here",
+        "link": "link-for-article-here",
+        "image": "resources/images/articles/exampleArticleImage.png",
         "isHighlighted": "yes"
     },
     {
-        "date": "2023-09-03",
-        "title": "Article 3",
-        "author": "Author 3",
-        "summary": "Summary of Article 3",
-        "body": "Body of Article 3",
-        "link": "article-name3",
-        "images": "images/articles/welcome.png",
+        "date": "Date here (month-day-year format)2",
+        "title": "Article here2",
+        "author": "Author here2",
+        "summary": "Summary here2",
+        "body": "Body here2",
+        "link": "link-for-article-here-2",
+        "image": "resources/images/articles/exampleArticleImage.png",
         "isHighlighted": "no"
     }
 ]
+

@@ -23,7 +23,7 @@ body {
     margin: 0;
     padding-top: 70px;
     height: 100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* Navigation Bar */
@@ -256,53 +256,89 @@ body {
     flex-direction: column;
     align-content: center;
 }
-.homePageArticleContainer {
+.articleLink {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 30px 30px 10px 30px;
+}
+/* End Home */
+
+
+/* Articles General */
+.articleContainerH, .articleContainerA, .articleContainerB {
     background-color: white;
     width: 62vw;
     min-width: 62vw;
     height: auto;
     margin: 50px 16vw;
-    padding: 5px 30px 25px 30px;
     border-radius: 22px;
+    padding: 30px 30px 10px 30px;
     box-shadow: 0 0 10px 10px rgba(80, 80, 80, 0.4);
 }
-/* End Home */
+.articleImageRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.articleImage {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing below the image */
+}
+.articleDataRow {
+    color: black;
+}
+.articleDate {
+    float: right;
+    font-weight: bold;
+    font-size: 16px;
+}
+.articleTitle {
+    font-weight: bold;
+    font-size: 32px;
+}
+.articleAuthor {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.articleSummary {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.articleBody {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+/* End Articles General */
 
 /* Blog */
 .blogBackground { 
     width: 100vw;
-    height: 100vh;
-    background: linear-gradient(to bottom, #459690, #5B3187);
     display: flex;
     flex-direction: column;
     align-content: center;
+    background-image: url('../images/backgrounds/homeBannerBackground.png'); /* Replace with the actual path to your image */
+    background-repeat: repeat; /* Repeat the image */
+    background-attachment: fixed; /* Fixed background, so it doesn't scroll with the content */
 }
 .articleBackground { 
     width: 100vw;
-    height: 100vh;
-    background-color: #459690;
     display: flex;
     justify-content: center;
+    background-image: url('../images/backgrounds/homeBannerBackground.png'); /* Replace with the actual path to your image */
+    background-repeat: repeat; /* Repeat the image */
+    background-attachment: fixed; /* Fixed background, so it doesn't scroll with the content */
 }
-.articlePage, .articleContainer {
-    background-color: white;
-    width: 900px;
-    min-width: 300px;
-    height: auto;
-    margin: 50px;
-    padding: 5px 30px 25px 30px;
-    border-radius: 22px;
-    box-shadow: 0 0 10px 10px rgba(80, 80, 80, 0.4);
-}
-.articleContainer:first-child {
+.articleContainerB:first-child {
     margin-top: 40px
 }
-.articleContainer {
+.articleContainerB {
     margin: 0px 50px;
-}
-.articleLink {
-    text-decoration: none;
-    color: black;
 }
 
 /* Contact Us */
@@ -352,3 +388,21 @@ form > label {
     border: 1px solid grey;
     border-radius: 5px;
 }
+/* End Contact Us */
+
+/* Thank You */
+.thankYouDiv {
+    background-color: white;
+    width: 900px;
+    min-width: 300px;
+    max-height: 700px;
+    margin: 50px;
+    padding: 10px 30px;
+    border-radius: 22px;
+    box-shadow: 0 0 10px 10px rgba(80, 80, 80, 0.4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* End Thank You */

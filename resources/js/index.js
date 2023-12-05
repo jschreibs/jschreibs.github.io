@@ -27,17 +27,53 @@ document.addEventListener('DOMContentLoaded', function () {
           const articleLink = document.createElement('a');
           articleLink.classList.add('articleLink');
           articleLink.href = "article.html?" + data.link;
-          
+
           const articleContainer = document.createElement('div');
-          articleContainer.classList.add('homePageArticleContainer');
-          articleContainer.innerHTML = `
-            <h6 class="articleDate">${data.date}</h6>
-            <h1 class="articleTitle">${data.title}</h1>
-            <h5 class="articleAuthor">${data.author}</h5>
-            <div class="articleSummary">${data.summary}</div>
-          `;
-          articleLink.appendChild(articleContainer)
-          container.appendChild(articleLink);
+          articleContainer.classList.add('articleContainerH');
+
+          // Create the first row for the image
+          const imageRow = document.createElement('div');
+          imageRow.classList.add('articleImageRow');
+
+          const articleImage = document.createElement('img');
+          articleImage.classList.add('articleImage');
+          articleImage.src = data.image;
+
+          imageRow.appendChild(articleImage);
+
+          // Create the second row for the rest of the data
+          const dataRow = document.createElement('div');
+          dataRow.classList.add('articleDataRow');
+
+          const articleDate = document.createElement('div');
+          articleDate.classList.add('articleDate');
+          articleDate.textContent = data.date;
+
+          const articleTitle = document.createElement('div');
+          articleTitle.classList.add('articleTitle');
+          articleTitle.textContent = data.title;
+
+          const articleAuthor = document.createElement('div');
+          articleAuthor.classList.add('articleAuthor');
+          articleAuthor.textContent = data.author;
+
+          const articleSummary = document.createElement('div');
+          articleSummary.classList.add('articleSummary');
+          articleSummary.textContent = data.summary;
+
+          // Append elements to the data row
+          dataRow.appendChild(articleDate);
+          dataRow.appendChild(articleTitle);
+          dataRow.appendChild(articleAuthor);
+          dataRow.appendChild(articleSummary);
+
+          // Append rows to the link
+          articleLink.appendChild(imageRow);
+          articleLink.appendChild(dataRow);
+
+          // Append link to the container
+          articleContainer.appendChild(articleLink);
+          container.appendChild(articleContainer);
         }
       });
     })
