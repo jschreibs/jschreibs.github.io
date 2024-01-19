@@ -16,6 +16,29 @@
 
       <!-- JS -->
       <script src="resources/js/contactUs.js"></script>
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+      <script>
+         function onSubmit(token) {
+            if (validateForm()) {
+               document.getElementById("contact_form").submit();
+            } else {
+               alert("Please fill out all required fields before submitting.");
+            }
+         }
+
+         function validateForm() {
+            var name = document.getElementById("name").value;
+            var zipcode = document.getElementById("zipcode").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name === "" || zipcode === "" || phone === "" || email === "" || message === "") {
+               return false;
+            }
+            return true;
+         }
+       </script>
    </head>
    <body>
       <nav class="navbar">
@@ -67,7 +90,11 @@
                         <textarea id="message" name="message" rows="4" cols="50" maxlength="150" required></textarea>
                      </div>
                   </label>
-                  <input type="submit" value="Submit">
+                  <button class="g-recaptcha" 
+                     data-sitekey="6Lc3kFUpAAAAAH5hXRcMS1xy3XYRtHWsFI93D8Ak" 
+                     data-callback='onSubmit' 
+                     data-action='submit'>Submit
+                  </button>
                </form>
             </div>
          </div>

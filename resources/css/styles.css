@@ -292,27 +292,27 @@ body {
 .articleDate {
     float: right;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 16pt;
 }
 .articleTitle {
     font-weight: bold;
-    font-size: 32px;
+    font-size: 28pt;
 }
 .articleAuthor {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 16pt;
 }
 .articleSummary {
     display: block;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 16pt;
 }
 .articleBody {
     display: block;
     margin-bottom: 30px;
-    font-size: 16px;
+    font-size: 16pt;
 }
 /* End Articles General */
 
