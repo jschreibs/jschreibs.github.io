@@ -60,7 +60,7 @@ body {
     color: black;
     font-family: arial;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 14pt;
     text-decoration: none;
     padding: 0px 16px;
     display: flex;
@@ -100,7 +100,7 @@ body {
 /* Home Banner */
 .homeBannerContainer {
     width: 100%;
-    height: 650px;
+    height: 600px;
 }
 .homeBannerBackgroundImage {
     width: 100%;
@@ -119,17 +119,17 @@ body {
 .headerTextWhite {
     color: white;
     font-weight: bold;
-    font-size: 40pt;
+    font-size: 44pt;
 }
 .headerTextBlack {
     color: black;
     font-weight: bold;
-    font-size: 40pt;
+    font-size: 44pt;
 }
 .subText {
     color: white;
     font-weight: bold;
-    font-size: 20pt;
+    font-size: 24pt;
 }
 
 /* Plans */
@@ -174,17 +174,13 @@ body {
 .homeQuestionsContainer {
     margin: 0px 16vw 20px 16vw;
 }
-.subHeaderText {
-    font-weight: bold;
-    font-size: 30pt;
-}
 .questionText {
-    font-size: 16pt;
+    font-size: 24pt;
     font-weight: bold;
 }
 .answerText {
     font-family: arial;
-    font-size: 14pt;
+    font-size: 18pt;
     margin: 20px 1vw;
 }
 
@@ -201,42 +197,70 @@ body {
 }
 .homeServicesBanner {
     text-align: center;
-    padding: 120px 0px 0px 0px;
+    padding-top: 100px;
 }
 .homeServicesButtonContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* PHONE */
 @media (orientation: portrait) {
     .homeServicesButtonContainer {
         margin: 20px 6vw;
     }
-}
-@media (orientation: landscape) { 
-    .homeServicesButtonContainer {
-        margin: 20px 24vw;
+    .homeServicesImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 40px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 10px;
+        width: 160px;
+        height: 160px;
+    }
+    .homeServicesImg > img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .homeServicesText {
+        font-weight: bold;
+        font-size: 20pt;
     }
 }
-.homeServicesImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 40px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 10px;
-    /* 190 big screen */
-    width: 160px;
-    height: 160px;
-}
-.homeServicesImg > img {
-    /* 150 big screen */
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
+
+/* DESKTOP */
+@media (orientation: landscape) { 
+    .homeServicesButtonContainer {
+        margin: 20px 16vw;
+    }
+    .homeServicesImg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 40px;
+        margin: 20px;
+        background-color: white;
+        border-radius: 10px;
+        width: 220px;
+        height: 220px;
+    }
+    .homeServicesImg > img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .homeServicesText {
+        font-weight: bold;
+        font-size: 16pt;
+    }
 }
 
 /* Home Blog Posts */
@@ -246,7 +270,6 @@ body {
 }
 .homeBlogPostBanner {
     text-align: center;
-    padding: 100px 0px 0px 0px;
     margin: 120px 10vw 10px 10vw;
 }
 .homeBlogPostsContainer {
@@ -300,14 +323,12 @@ body {
 }
 .articleAuthor {
     display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 16pt;
+    font-size: 18pt;
 }
 .articleSummary {
     display: block;
-    margin-bottom: 15px;
-    font-size: 16pt;
+    margin: 36px 0px 16px 0px;
+    font-size: 18pt;
 }
 .articleBody {
     display: block;
@@ -315,6 +336,12 @@ body {
     font-size: 16pt;
 }
 /* End Articles General */
+
+/* Article Page */
+.articleContainerA > img {
+    width: 100%;
+}
+/* End Article Page */
 
 /* Blog */
 .blogBackground { 
